@@ -9,14 +9,14 @@ export default function Result({ inputValue }) {
     resultData[0].annualInvestment;
 
   return (
-    <table id="result" >
+    <table id="result">
       <thead>
         <tr>
-          <th>Year</th>
-          <th>Investment Value</th>
-          <th>Interest(Year)</th>
-          <th>Total Interest</th>
+          <th>Time (Year)</th>
           <th>Invested Capital</th>
+          <th>Interest(per Year)</th>
+          <th>Total Interest</th>
+          <th>Return Value</th>
         </tr>
       </thead>
       <tbody>
@@ -29,10 +29,10 @@ export default function Result({ inputValue }) {
           return (
             <tr key={yearData.year}>
               <td>{yearData.year}</td>
-              <td>{formatter.format(yearData.valueEndOfYear)}</td>
+              <td>{formatter.format(totalAmountInvested)} </td>
               <td>{formatter.format(yearData.interest)} </td>
               <td>{formatter.format(totalInterest)} </td>
-              <td>{formatter.format(totalAmountInvested)} </td>
+              <td>{formatter.format(yearData.valueEndOfYear)}</td>
             </tr>
           );
         })}
