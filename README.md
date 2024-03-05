@@ -6,7 +6,7 @@ Welcome to the React Investment Calculator! This web application allows users to
 
 To get started with the Investment Calculator, follow the steps below:
 
-1. Clone the repository: `git clone [repository-url]`
+1. Clone the repository: `git clone https://github.com/tyagi-achint/Investment-Calculator-ReactJs.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 4. Open your browser and navigate to `http://localhost:3000` to access the application.
